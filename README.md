@@ -9,3 +9,10 @@
 </div>
 
 Python project starter
+
+## Required tools
+- [prek](https://prek.j178.dev/installation/)
+
+## Contribution
+- Install git hooks by `prek install` and ensure your changes pass the checks before creating a pull request.
+  - After `prek install`, git hooks will be automatically run while committing. To manually run the checks, use `prek run`.
