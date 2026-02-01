@@ -3,6 +3,7 @@
 # python-anything
 
 [![prek](https://img.shields.io/badge/-prek-F54327?logo=prek&labelColor=555)](https://github.com/j178/prek)
+[![Renovate](https://img.shields.io/badge/-renovate-308BE3?logo=renovate&labelColor=555)](https://github.com/renovatebot/renovate)
 
 [![Git Hooks](https://img.shields.io/github/actions/workflow/status/ulgens/python-anything-applied/git-hooks.yml?logo=github&label=Git%20Hooks)](https://github.com/ulgens/python-anything-applied/actions/workflows/git-hooks.yml)
 
