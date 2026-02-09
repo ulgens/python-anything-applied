@@ -52,12 +52,6 @@ Thank you for your interest in contributing to this project! This document provi
    ```bash
    prek run
    ```
-   
-   Or run individual checks:
-   ```bash
-   uv run ruff check .
-   uv run ruff format .
-   ```
 
 ### Code Quality Standards
 
