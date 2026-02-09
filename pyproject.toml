@@ -27,6 +27,7 @@ dev = [
     #   PYTHONBREAKPOINT = "ipdb.set_trace"
     "ipdb==0.13.13",
     "ipython==9.10.0",
+    "mypy==1.16.1",
     "pytest==9.0.2",
     "pytest-xdist==3.8.0",
 ]
@@ -40,3 +41,25 @@ package = false
 indent = 4
 keep_full_version = true
 max_supported_python = "3.14"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = ["-v", "--strict-markers", "--strict-config"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_any_generics = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true

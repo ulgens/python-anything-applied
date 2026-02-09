@@ -14,6 +14,27 @@
 
 Python project starter
 
+This repository demonstrates modern Python development best practices and serves as a template for starting new Python projects. It showcases integration of industry-standard tools and workflows.
+
+## Key Features
+- **Modern Package Management**: Uses [uv](https://github.com/astral-sh/uv) for fast, reliable dependency management
+- **Code Quality**: Configured with [ruff](https://github.com/astral-sh/ruff) for linting and formatting with 45+ rule categories
+- **Git Hooks**: Automated pre-commit checks via [prek](https://prek.j178.dev/)
+- **CI/CD**: GitHub Actions workflows for testing and validation
+- **Type Safety**: Type hints and strict configuration ready
+- **Testing**: pytest with xdist for parallel test execution
+
+## Dependencies Note
+The project includes several popular Python frameworks as demonstration examples:
+- **apache-airflow**: Workflow orchestration platform
+- **django**: Web framework
+- **fastapi**: Modern API framework
+- **langchain**: LLM application framework
+- **numpy**: Scientific computing
+- **pandas**: Data analysis
+
+These dependencies serve as examples for the template. Remove unused dependencies before starting your actual project.
+
 ## Required tools
 - [prek](https://prek.j178.dev/installation/)
 
