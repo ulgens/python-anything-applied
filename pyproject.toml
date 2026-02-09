@@ -13,6 +13,15 @@ classifiers = [
 ]
 dependencies = []
 
+[dependency-groups]
+dev = [
+    # TODO:
+    #   Find a way to define the following in this file:
+    #   PYTHONBREAKPOINT = "ipdb.set_trace"
+    "ipdb==0.13.13",
+    "ipython==9.10.0",
+]
+
 [tool.uv]
 # The earliest version that supports the current lock file revision
 required-version = ">=0.8.4"
