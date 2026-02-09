@@ -12,7 +12,6 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
 ]
 dependencies = [
-    "apache-airflow==3.1.7",
     "django==6.0.2",
     "fastapi==0.117.1",
     "langchain==1.2.9",
