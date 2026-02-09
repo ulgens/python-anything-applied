@@ -52,6 +52,13 @@ Thank you for your interest in contributing to this project! This document provi
    ```bash
    prek run
    ```
+   
+   Or run individual hooks via prek:
+   ```bash
+   prek run ruff-check
+   prek run ruff-format
+   prek run codespell
+   ```
 
 ### Code Quality Standards
 
