@@ -1,7 +1,6 @@
 # https://docs.pytest.org/en/stable/#a-quick-example
-def inc(x):
-    return x + 1
+from python_anything_applied import increment
 
 
 def test_answer():
-    assert inc(3) == 4
+    assert increment(3) == 4
