@@ -1,0 +1,24 @@
+[project]
+name = "python-anything-applied"
+version = "0.1.0"
+description = "Applied version of python-anything"
+readme = "README.md"
+authors = [
+    { name = "Ülgen Sarıkavak", email = "foss+python-anything@ulgenwanders.net" },
+]
+requires-python = ">=3.14"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = []
+
+[tool.uv]
+# The earliest version that supports the current lock file revision
+required-version = ">=0.8.4"
+package = false
+
+[tool.pyproject-fmt]
+indent = 4
+keep_full_version = true
+max_supported_python = "3.14"
