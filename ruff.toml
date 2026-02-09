@@ -121,3 +121,6 @@ ignore = [
 # Fixing them manually each time doesn't seem to add value.
 # https://docs.astral.sh/ruff/rules/mutable-class-default/
 "**/migrations/*" = ["RUF012"]
+# Use of "assert" is normal and expected in the test files.
+# https://docs.astral.sh/ruff/rules/assert/
+"**/tests/**" = ["S101"]
