@@ -13,7 +13,7 @@ classifiers = [
 ]
 dependencies = [
     "django==6.0.2",
-    "fastapi==0.129.0",
+    "fastapi==0.133.1",
     "langchain==1.2.10",
     "numpy==2.4.2",
     "pandas==3.0.1",
