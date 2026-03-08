@@ -58,6 +58,12 @@ repos:
         files: ^renovate.json5$
         args: [--strict]
 
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.22.0
+    hooks:
+      - id: zizmor
+        args: ["--no-progress", "--persona=auditor"]
+
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.2
     hooks:
