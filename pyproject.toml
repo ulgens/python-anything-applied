@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Ülgen Sarıkavak", email = "foss+python-anything@ulgenwanders.net" },
 ]
-requires-python = ">=3.14"
+requires-python = "==3.14.*"
 classifiers = [
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.14",
@@ -38,4 +38,3 @@ package = false
 [tool.pyproject-fmt]
 indent = 4
 keep_full_version = true
-max_supported_python = "3.14"
