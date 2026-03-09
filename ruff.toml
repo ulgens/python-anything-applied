@@ -59,11 +59,6 @@ select = [
     # https://docs.astral.sh/ruff/rules/#pep8-naming-n
     # https://github.com/PyCQA/pep8-naming
     "N",
-    # https://docs.astral.sh/ruff/rules/#numpy-specific-rules-npy
-    "NPY",
-    # https://docs.astral.sh/ruff/rules/#pandas-vet-pd
-    # https://github.com/deppen8/pandas-vet
-    "PD",
     # https://docs.astral.sh/ruff/rules/#perflint-perf
     # https://github.com/tonybaloney/perflint
     "PERF",
@@ -112,10 +107,6 @@ ignore = [
 ]
 
 [lint.per-file-ignores]
-# RUF012 is violated by Django-generated migrations.
-# Fixing them manually each time doesn't seem to add value.
-# https://docs.astral.sh/ruff/rules/mutable-class-default/
-"**/migrations/*" = ["RUF012"]
 # Use of "assert" is normal and expected in the test files.
 # https://docs.astral.sh/ruff/rules/assert/
 "**/tests/**" = ["S101"]
