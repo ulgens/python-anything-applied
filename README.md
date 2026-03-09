@@ -12,7 +12,7 @@
 
 </div>
 
-An applied version of a Python project template. This project content will be converted into a template by [Copier](https://copier.readthedocs.io/) and under [python-anything](https://github.com/ulgens/python-anything) repository.
+An applied version of a Python project template. The contents of this project will be converted into a template by [Copier](https://copier.readthedocs.io/) and published in the [python-anything](https://github.com/ulgens/python-anything) repository.
 
 ## Required tools
 - [prek](https://prek.j178.dev/installation/)
