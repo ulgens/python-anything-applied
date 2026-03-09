@@ -9,6 +9,7 @@ on:
 permissions: {}
 
 concurrency:
+  # GitHub doesn't allow accessing env here, so the value is duplicated to the job step.
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
@@ -19,6 +20,12 @@ jobs:
     timeout-minutes: 1
 
     steps:
+      # GitHub Actions doesn't print the concurrency group in the logs.
+      # This is to help debugging potential concurrency issues.
+      # https://stackoverflow.com/questions/77571501/
+      - name: Export concurrency key
+        run: echo "concurrency-key=${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}" >> "$GITHUB_OUTPUT"
+
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
         with:

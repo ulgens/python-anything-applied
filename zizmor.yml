@@ -1,0 +1,8 @@
+rules:
+  template-injection:
+    ignore:
+      # These values are not user-controlled and can be considered safe.
+      - git-hooks.yml:27:40
+      - git-hooks.yml:27:99
+      - tests.yml:36:40
+      - tests.yml:36:99
