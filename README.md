@@ -1,6 +1,6 @@
 <div align="center">
 
-# python-anything
+# python-anything-applied
 
 [![Python](https://img.shields.io/badge/python-3.14-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![uv](https://img.shields.io/badge/-uv-DE5FE9?logo=uv&labelColor=555)](https://github.com/astral-sh/uv)
@@ -12,7 +12,7 @@
 
 </div>
 
-Python project starter
+An applied version of a Python project template. This project content will be converted into a template by [Copier](https://copier.readthedocs.io/) and under [python-anything](https://github.com/ulgens/python-anything) repository.
 
 ## Required tools
 - [prek](https://prek.j178.dev/installation/)
