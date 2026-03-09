@@ -20,6 +20,9 @@ Python project starter
 ## Implemented Methods & Patterns
 * ruff: ruff checks are run as git hooks and wrapped in CI. Configuration is in `ruff.toml`.
 
+## Related Projects
+- Use [ulgens/django-blasphemy](https://github.com/ulgens/django-blasphemy) for Django projects.
+
 ## Contribution
 - Install git hooks by `prek install` and ensure your changes pass the checks before creating a pull request.
   - After `prek install`, git hooks will be automatically run while committing. To manually run the checks, use `prek run`.
