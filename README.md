@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repo is archived and no longer maintained. The template version of this project is available in the [python-anything](https://github.com/ulgens/python-anything) repository.
+
 <div align="center">
 
 # python-anything-applied
