@@ -18,7 +18,20 @@ An applied version of a Python project template. The contents of this project wi
 - [prek](https://prek.j178.dev/installation/)
 
 ## Implemented Methods & Patterns
-* ruff: ruff checks are run as git hooks and wrapped in CI. Configuration is in `ruff.toml`.
+* **Linting & Formatting**: [Ruff](https://github.com/astral-sh/ruff) for linting and formatting, configured in `ruff.toml`.
+* **Git Hooks**: [prek](https://prek.j178.dev/) runs pre-commit hooks defined in `.pre-commit-config.yaml`, including:
+  * General checks (large files, merge conflicts, trailing whitespace, etc.)
+  * `pyproject-fmt` for `pyproject.toml` formatting
+  * `uv-lock` to keep the lockfile in sync
+  * `ruff` for linting and formatting
+  * `yamlfmt` for YAML formatting
+  * `check-jsonschema` for GitHub Actions workflow validation
+  * `zizmor` for GitHub Actions security auditing
+  * `codespell` for spell checking
+* **CI**: GitHub Actions workflows for running tests (`pytest`) and git hooks.
+* **Dependency Management**: [uv](https://github.com/astral-sh/uv) with pinned versions in `pyproject.toml` and `uv.lock`.
+* **Dependency Updates**: [Renovate](https://github.com/renovatebot/renovate) for automated dependency update PRs.
+* **Testing**: [pytest](https://github.com/pytest-dev/pytest) with [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) for parallel test execution.
 
 ## Related Projects
 - Use [ulgens/django-blasphemy](https://github.com/ulgens/django-blasphemy) for Django projects.
